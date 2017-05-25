@@ -5,8 +5,8 @@
 */
 
 "use strict";
-app.controller("EventPlannerController", [ "$scope", controllerFn ]);
+app.controller("EventPlannerController", [ "$scope", "$timeout", function($scope, $timeout) {
 
-function controllerFn ($scope) {
-    
-}
+    $scope.currentPage = "home";
+
+}]);

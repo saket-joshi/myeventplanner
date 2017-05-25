@@ -9,3 +9,16 @@
 var app = angular.module("eventPlannerApp", [
         "ngRoute"
     ]);
+
+// Setup the app routes
+app.config(function($routeProvider, $locationProvider) {
+
+    $routeProvider
+        .when("/home", {
+            templateUrl: "views/home.html",
+            controller: "HomeController"
+        })
+        .otherwise({
+            redirectTo: "/home"
+        });
+});
